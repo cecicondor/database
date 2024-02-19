@@ -1,0 +1,38 @@
+Esses campos são fictícios. -> prático de banco de dados, dados manipulados no SQLServer Management Studio!!!
+
+CREATE TABLE veiculosIdeal2
+(
+ placa VARCHAR(30),
+ marca VARCHAR(20),
+ modelo VARCHAR(20)   
+);
+
+INSERT INTO veiculosIdeal2 (placa, marca, modelo)
+	VALUES ('FDK-4C73', 'Chevrolet', 'ONIX'),
+		   ('DHJ-564', 'Chevrolet','ONIX'),
+		   ('ABC-1234','Honda', 'Corolla') 
+
+SELECT * FROM veiculosIdeal2;
+
+SELECT placa FROM veiculosIdeal2;
+
+SELECT modelo FROM veiculosIdeal2;
+
+SELECT * FROM veiculosIdeal2 ORDER BY placa;
+
+DELETE FROM veiculosIdeal2 WHERE placa = 'ABC-1234';
+
+SELECT *FROM veiculosIdeal2;
+
+
+INSERT INTO veiculosIdeal2 (placa, marca, modelo)
+VALUES ('DGF-3456', 'FIAT', 'Strada'),
+       ('TGSD-6543', 'Chevrolet', 'Onix'),
+	   ('HSGD-652', 'Volkswagen', 'Polo'),
+	   ('HSHT-875', 'Tesla', 'Model3');
+
+SELECT * FROM veiculosIdeal2;
+
+DELETE FROM veiculosIdeal2 WHERE modelo = 'ONIX';
+
+SELECT *FROM veiculosIdeal2;
